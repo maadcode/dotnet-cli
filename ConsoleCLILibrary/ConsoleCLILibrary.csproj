@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    
+    <!-- NuGet Package Properties -->
+    <PackageId>ConsoleCLILibrary</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>maadcode</Authors>
+    <Company>maadcode</Company>
+    <Product>ConsoleCLILibrary</Product>
+    <Description>A library for building CLI applications with manual and Cocona-based command handlers</Description>
+    <PackageTags>cli;console;library;cocona;dotnet</PackageTags>
+    <PackageOutputPath>../nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    
+    <!-- GitHub Repository Information -->
+    <RepositoryUrl>https://github.com/maadcode/dotnetlearn</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/maadcode/dotnetlearn</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>

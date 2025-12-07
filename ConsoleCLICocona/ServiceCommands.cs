@@ -2,6 +2,7 @@ using Cocona;
 using ConsoleCLILibrary.Implementations;
 using ConsoleCLILibrary.Interfaces;
 using ConsoleCLILibrary2.Implementations;
+using ConsoleCLILibrary3.Interfaces;
 
 namespace ConsoleCLICocona;
 
@@ -11,18 +12,21 @@ public class ServiceCommands
     private readonly StagingFakeService _stagingService;
     private readonly ProductionFakeService _productionService;
     private readonly DeployService _deployService;
+    private readonly IMigrationService _migrationService;
     
     // Constructor con inyección de dependencias (Cocona lo hace automáticamente)
     public ServiceCommands(
         DevelopmentFakeService developmentService,
         StagingFakeService stagingService,
         ProductionFakeService productionService,
-        DeployService deployService)
+        DeployService deployService,
+        IMigrationService migrationService)
     {
         _developmentService = developmentService;
         _stagingService = stagingService;
         _productionService = productionService;
         _deployService = deployService;
+        _migrationService = migrationService;
     }
 
     // [Command] - Define un comando ejecutable
@@ -67,6 +71,27 @@ public class ServiceCommands
         var prevColor = Console.ForegroundColor;
         Console.ForegroundColor = color;
         Console.WriteLine(message);
+        Console.ForegroundColor = prevColor;
+    }
+
+    // [Command] - Define el comando migration
+    // Se ejecuta con: dotnet run -- migration -e dev
+    [Command("migration")]
+    public void Migration(
+        // [Option] - Define una opción con:
+        // - Short name: 'e' ? se usa como -e
+        // - Description: Texto de ayuda generado automáticamente
+        // - Valor por defecto: "dev"
+        [Option('e', Description = "Entorno de migración: dev, staging, prod")] 
+        string environment = "dev")
+    {
+        Console.WriteLine($"Version: {_migrationService.ShowVersion()}");
+        Console.WriteLine();
+
+        var result = _migrationService.ExecuteMigration(environment);
+        var prevColor = Console.ForegroundColor;
+        Console.ForegroundColor = result.Color;
+        Console.WriteLine(result.Message);
         Console.ForegroundColor = prevColor;
     }
 }

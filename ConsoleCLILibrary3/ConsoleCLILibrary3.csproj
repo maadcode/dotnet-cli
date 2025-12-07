@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    
+    <!-- NuGet Package Properties -->
+    <PackageId>ConsoleCLILibrary3</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>maadcode</Authors>
+    <Company>maadcode</Company>
+    <Product>ConsoleCLILibrary3</Product>
+    <Description>A library for database migration services - NuGet Server publication</Description>
+    <PackageTags>cli;console;library;migration;database;dotnet</PackageTags>
+    <PackageOutputPath>../nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>

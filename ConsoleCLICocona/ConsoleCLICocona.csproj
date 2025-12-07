@@ -11,6 +11,7 @@
     <PackageReference Include="Cocona" Version="2.2.0" />
     <PackageReference Include="ConsoleCLILibrary" Version="1.0.0" />
     <PackageReference Include="ConsoleCLILibrary2" Version="1.0.0" />
+    <PackageReference Include="ConsoleCLILibrary3" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

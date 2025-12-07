@@ -1,5 +1,7 @@
 ﻿using ConsoleCLILibrary.Implementations;
 using ConsoleCLILibrary2.Implementations;
+using ConsoleCLILibrary3.Implementations;
+using ConsoleCLILibrary3.Interfaces;
 using ConsoleCLIManual.Commands;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,10 +18,12 @@ public class Program
         services.AddSingleton<StagingFakeService>();
         services.AddSingleton<ProductionFakeService>();
         services.AddSingleton<DeployService>();
+        services.AddSingleton<IMigrationService, MigrationService>();
         
         // Registrar comandos (cada comando implementa ICommand)
         services.AddTransient<ICommand, OnboardingCommand>();
         services.AddTransient<ICommand, DeployCommand>();
+        services.AddTransient<ICommand, MigrationCommand>();
         
         // Registrar orquestador de comandos
         services.AddTransient<ServiceCommands>();

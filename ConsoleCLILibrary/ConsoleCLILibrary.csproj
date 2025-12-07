@@ -17,9 +17,9 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     
     <!-- GitHub Repository Information -->
-    <RepositoryUrl>https://github.com/maadcode/dotnetlearn</RepositoryUrl>
+    <RepositoryUrl>https://github.com/maadcode/dotnet-cli</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://github.com/maadcode/dotnetlearn</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/maadcode/dotnet-cli</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 

@@ -1,4 +1,4 @@
-namespace ConsoleCLILibrary.Interfaces;
+namespace ConsoleCLILibrary2.Interfaces;
 
 public interface IDeployService
 {

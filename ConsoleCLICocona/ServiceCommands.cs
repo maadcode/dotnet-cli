@@ -1,6 +1,7 @@
 using Cocona;
 using ConsoleCLILibrary.Implementations;
 using ConsoleCLILibrary.Interfaces;
+using ConsoleCLILibrary2.Implementations;
 
 namespace ConsoleCLICocona;
 

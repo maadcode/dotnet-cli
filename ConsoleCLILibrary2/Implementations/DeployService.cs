@@ -1,6 +1,6 @@
-﻿using ConsoleCLILibrary.Interfaces;
+using ConsoleCLILibrary2.Interfaces;
 
-namespace ConsoleCLILibrary.Implementations;
+namespace ConsoleCLILibrary2.Implementations;
 
 public class DeployService : IDeployService
 {
@@ -8,8 +8,8 @@ public class DeployService : IDeployService
     {
         return targetType.Trim().ToLower() switch
         {
-            "contenedor" or "container" => ("¡Desplegando en contenedor! 🐳", ConsoleColor.Cyan),
-            "local" => ("¡Desplegando en local! 💻", ConsoleColor.Green),
+            "contenedor" or "container" => ("�Desplegando en contenedor! ??", ConsoleColor.Cyan),
+            "local" => ("�Desplegando en local! ??", ConsoleColor.Green),
             _ => ($"Tipo de despliegue desconocido: {targetType}", ConsoleColor.Red)
         };
     }

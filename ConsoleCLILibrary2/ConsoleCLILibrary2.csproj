@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    
+    <!-- NuGet Package Properties -->
+    <PackageId>ConsoleCLILibrary2</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>maadcode</Authors>
+    <Company>maadcode</Company>
+    <Product>ConsoleCLILibrary2</Product>
+    <Description>A library for deployment services - Local NuGet Package publication</Description>
+    <PackageTags>cli;console;library;deploy;dotnet</PackageTags>
+    <PackageOutputPath>../nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>

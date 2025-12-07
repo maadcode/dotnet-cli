@@ -1,4 +1,4 @@
-using ConsoleCLILibrary.Implementations;
+using ConsoleCLILibrary2.Implementations;
 
 namespace ConsoleCLIManual.Commands;
 

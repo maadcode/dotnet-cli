@@ -1,5 +1,6 @@
 ﻿using Cocona;
 using ConsoleCLILibrary.Implementations;
+using ConsoleCLILibrary2.Implementations;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ConsoleCLICocona;

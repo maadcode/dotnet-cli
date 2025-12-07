@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConsoleCLILibrary\ConsoleCLILibrary.csproj" />
+    <ProjectReference Include="..\ConsoleCLILibrary2\ConsoleCLILibrary2.csproj" />
   </ItemGroup>
 
 </Project>

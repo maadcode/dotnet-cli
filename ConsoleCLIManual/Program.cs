@@ -1,4 +1,5 @@
 ﻿using ConsoleCLILibrary.Implementations;
+using ConsoleCLILibrary2.Implementations;
 using ConsoleCLIManual.Commands;
 using Microsoft.Extensions.DependencyInjection;
 
